@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.kapt")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -47,6 +48,8 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.2")
     implementation("androidx.room:room-ktx:2.5.2")
     kapt("androidx.room:room-compiler:2.5.2")
+    implementation("androidx.navigation:navigation-fragment:2.7.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.recyclerview:recyclerview:1.3.1")
     implementation("androidx.fragment:fragment-ktx:1.6.1")
